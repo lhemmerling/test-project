@@ -28,6 +28,17 @@
   color: #61dafb;
 }
 
+.my-image {
+  width: 500px; /* oder eine andere gewünschte Breite */
+  height: auto; /* Beibehaltung des Seitenverhältnisses */
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Bild horizontal zentrieren */
+  align-items: center; /* Bild vertikal zentrieren */
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
