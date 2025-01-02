@@ -1,6 +1,6 @@
 import thumbsUp from './assets/images/thumbsUp.jpg';
 import './App.css';
-import { Box } from '@mui/material';
+import { Box, Link } from '@mui/material';
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Das sind die Sorben.
+          Das sind die Sorben!
         </a>
         <Box
           sx={{
@@ -43,6 +43,22 @@ function App() {
               height: 'auto',     // Höhe automatisch anpassen, um das Seitenverhältnis beizubehalten
             }}
             />
+        </Box>
+        <Box>
+        <Link
+            href="maps://?q=49.4299976,7.7531357"
+            // href="geo:49.4299976,7.7531357"
+            // href="https://www.google.com/maps?q=49.4299976,7.7531357"
+            target="_blank"
+            underline="none"
+            color="black"
+            sx={{
+              marginTop: '10px', // Abstand zwischen der Flagge und dem Link
+              fontSize: '14px', // Schriftgröße des Links
+            }}
+          >
+            Standort anzeigen
+          </Link>
         </Box>
       </header>
     </div>
